@@ -43,3 +43,8 @@ matrix:
       <<: *default-script
     - name: "webhint"
       <<: *default-script
+    - name: "pkg-build"
+      node_js: "10"
+      script:
+        - yarn global add pkg
+        - "pkg index.js -o website-checks"
