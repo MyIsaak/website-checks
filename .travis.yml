@@ -48,3 +48,4 @@ matrix:
       script:
         - yarn global add pkg
         - "pkg index.js -o website-checks --targets linux,macos,win"
+        - "ls -al"
