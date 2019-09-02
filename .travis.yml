@@ -47,4 +47,4 @@ matrix:
       node_js: "10"
       script:
         - yarn global add pkg
-        - "pkg index.js -o website-checks"
+        - "pkg index.js -o website-checks --targets linux,macos,win"
